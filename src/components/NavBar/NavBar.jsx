@@ -19,10 +19,10 @@ function Navbar() {
 
             {/* Social Media Icons */}
             <div className="social-icons">
-                <a href="https://linkedin.com/your-profile" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#f39c12] transition-colors duration-300">
+                <a href="https://www.linkedin.com/in/lenerman-yaroslav/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#f39c12] transition-colors duration-300">
                     <FontAwesomeIcon icon={faLinkedin} />
                 </a>
-                <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#f39c12] transition-colors duration-300">
+                <a href="https://github.com/SevenFeets" target="_blank" rel="author" className="text-white hover:text-[#f39c12] transition-colors duration-300">
                     <FontAwesomeIcon icon={faGithub} />
                 </a>
             </div>
