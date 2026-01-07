@@ -94,12 +94,22 @@
 .social-icons {
   display: flex;
   gap: 10px;
+  align-items: center;
+  z-index: 11; /* Ensure icons are above other elements */
 }
 
 .social-icons a {
   color: white;
   font-size: 1.5rem;
   transition: color 0.3s;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  text-decoration: none;
+  position: relative;
+  z-index: 11;
 }
 
 .social-icons a:hover {
