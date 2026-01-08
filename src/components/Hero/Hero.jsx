@@ -1,31 +1,14 @@
 import './Hero.css'
 
 function hero() {
-    // Use the same pattern as project images - direct path without encoding
-    // Project images work with spaces, so this should work too
-    const profileImageSrc = '/img/my profile.png.jpg';
-
     return (
         <section className="hero-section">
             <div className="hero-wrapper">
                 <div className="hero-picture">
                     <div className="profile-container">
                         <img 
-                            src={profileImageSrc} 
+                            src="/img/my-profile.jpg" 
                             alt="profile picture"
-                            onError={(e) => {
-                                console.error('Profile image failed to load. Trying alternatives...');
-                                const currentSrc = e.target.src;
-                                // Try different encoding variations
-                                if (currentSrc.includes(' ')) {
-                                    e.target.src = currentSrc.replace(/ /g, '%20');
-                                } else if (!currentSrc.includes('%20')) {
-                                    e.target.src = '/img/my%20profile.png.jpg';
-                                } else {
-                                    // Last resort: try without the .png part
-                                    e.target.src = '/img/my%20profile.jpg';
-                                }
-                            }}
                         />
                         <div className="glow-effect"></div>
                     </div>
