@@ -19,9 +19,9 @@
    letter-spacing: 5px;
    font-style: italic;
    font-family: 'Poppins', sans-serif;
-   /* Enhanced text shadow for better visibility */
-   text-shadow: 0 0 20px rgba(255, 255, 255, 0.3), 
-                0 0 40px rgba(255, 255, 255, 0.1),
+   /* Green glow to match the theme */
+   text-shadow: 0 0 10px rgba(0, 255, 0, 0.5),
+                0 0 20px rgba(0, 255, 0, 0.3),
                 2px 2px 4px rgba(0, 0, 0, 0.8);
    position: relative;
    z-index: 1;
@@ -30,16 +30,15 @@
 .contact-form {
     width: 100%;
     max-width: 600px;
-    /* Improved background with better opacity for visibility */
-    background: rgba(18, 23, 37, 0.95);
-    border-radius: 12px;
+    /* Lighter, more visible background with green theme */
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
     padding: 40px;
-    /* Combined box-shadow with inner glow for better definition */
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8), 
-                0 0 20px rgba(255, 255, 255, 0.05),
-                inset 0 1px 0 rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Green-themed shadow for consistency */
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.2), 
+                0 8px 32px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 255, 0, 0.3);
     position: relative;
 }
 
@@ -50,18 +49,19 @@
 .form-group label {
     display: block;
     margin-bottom: 8px;
-    color: #fff;
+    color: #00ff00;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
     padding: 12px;
-    /* Improved input background for better visibility */
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Brighter input fields with green accent */
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(0, 255, 0, 0.2);
     border-radius: 8px;
     color: #fff;
     font-size: 16px;
@@ -71,8 +71,9 @@
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(0, 255, 0, 0.5);
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
 }
 
 .form-group textarea {
@@ -86,29 +87,50 @@
     margin-top: 20px;
 }
 
-.btn-submit,
+.btn-submit {
+    width: 50%;
+    padding: 12px;
+    /* Green primary button to match theme */
+    background: #00ff00;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
+
 .btn-reset {
     width: 50%;
     padding: 12px;
-    /* Enhanced button visibility */
-    background: rgba(20, 20, 20, 0.8);
-    color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* Secondary button with green border */
+    background: transparent;
+    color: #00ff00;
+    border: 2px solid #00ff00;
     border-radius: 8px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.btn-submit:hover,
+.btn-submit:hover {
+    background: #00cc00;
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.5);
+    transform: translateY(-2px);
+}
+
 .btn-reset:hover {
-    background: rgba(40, 40, 40, 0.9);
-    border-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2),
-                0 4px 8px rgba(0, 0, 0, 0.4);
-    transform: translateY(-1px);
+    background: rgba(0, 255, 0, 0.1);
+    border-color: #00ff00;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+    transform: translateY(-2px);
 }
 
 /* Responsive design */
