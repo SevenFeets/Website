@@ -1,19 +1,30 @@
 import './Hero.css'
 
 function hero() {
-    // Properly encode the image path to handle spaces in filename
-    const profileImagePath = encodeURI('/img/my profile.png.jpg');
-    
+    // Use the same pattern as project images - direct path without encoding
+    // Project images work with spaces, so this should work too
+    const profileImageSrc = '/img/my profile.png.jpg';
+
     return (
         <section className="hero-section">
             <div className="hero-wrapper">
                 <div className="hero-picture">
                     <div className="profile-container">
                         <img 
-                            src={profileImagePath} 
+                            src={profileImageSrc} 
                             alt="profile picture"
                             onError={(e) => {
-                                console.error('Failed to load profile image:', profileImagePath);
+                                console.error('Profile image failed to load. Trying alternatives...');
+                                const currentSrc = e.target.src;
+                                // Try different encoding variations
+                                if (currentSrc.includes(' ')) {
+                                    e.target.src = currentSrc.replace(/ /g, '%20');
+                                } else if (!currentSrc.includes('%20')) {
+                                    e.target.src = '/img/my%20profile.png.jpg';
+                                } else {
+                                    // Last resort: try without the .png part
+                                    e.target.src = '/img/my%20profile.jpg';
+                                }
                             }}
                         />
                         <div className="glow-effect"></div>
