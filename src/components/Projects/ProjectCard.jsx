@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function ProjectCard({ title, description, image, technologies, shadowColor, githubUrl, homepage }) {
     const handleReadMore = () => {
         // Prefer homepage if available, otherwise use GitHub URL
@@ -43,5 +45,15 @@ function ProjectCard({ title, description, image, technologies, shadowColor, git
         </div>
     );
 }
+
+ProjectCard.propTypes = {
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    technologies: PropTypes.arrayOf(PropTypes.string),
+    shadowColor: PropTypes.string,
+    githubUrl: PropTypes.string,
+    homepage: PropTypes.string
+};
 
 export default ProjectCard;

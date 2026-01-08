@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Navbar from './components/NavBar/NavBar.jsx';
 import Hero from './components/Hero/Hero.jsx';
 import Projects from './components/Projects/Projects.jsx';

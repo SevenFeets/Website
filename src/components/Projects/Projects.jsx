@@ -118,7 +118,6 @@ function Projects() {
                         } catch (err) {
                             console.error(`Error fetching languages for ${repo.name}:`, err);
                             
-                            const shadowColor = shadowColors[index % shadowColors.length];
                             // Check for custom image first, then use GitHub social preview
                             const image = customImages[repo.name] || 
                                 `https://opengraph.githubassets.com/1/${GITHUB_USERNAME}/${repo.name}`;

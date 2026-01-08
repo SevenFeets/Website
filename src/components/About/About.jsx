@@ -8,8 +8,8 @@ function about() {
                 <div className="about-content">
                     <h2>About Me</h2>
                     <p>
-                        Hello! I'm a versatile developer with a strong foundation in both low-level and high-level programming.
-                        My journey in programming started with parallel programming in C, and I've since expanded my expertise
+                        Hello! I&apos;m a versatile developer with a strong foundation in both low-level and high-level programming.
+                        My journey in programming started with parallel programming in C, and I&apos;ve since expanded my expertise
                         across various domains including web development, machine learning, and game development.
                     </p>
 
