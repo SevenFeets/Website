@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Python requirements (documentation only, not used by Vercel)
+requirements.txt
