@@ -1,12 +1,21 @@
 import './Hero.css'
 
 function hero() {
+    // Properly encode the image path to handle spaces in filename
+    const profileImagePath = encodeURI('/img/my profile.png.jpg');
+    
     return (
         <section className="hero-section">
             <div className="hero-wrapper">
                 <div className="hero-picture">
                     <div className="profile-container">
-                        <img src="/img/my profile.png.jpg" alt="profile picture" />
+                        <img 
+                            src={profileImagePath} 
+                            alt="profile picture"
+                            onError={(e) => {
+                                console.error('Failed to load profile image:', profileImagePath);
+                            }}
+                        />
                         <div className="glow-effect"></div>
                     </div>
                     <h2 className="hero-role">
