@@ -6,7 +6,7 @@ function hero() {
             <div className="hero-wrapper">
                 <div className="hero-picture">
                     <div className="profile-container">
-                        <img src="public\img\my profile.png.jpg" alt="profile picture" />
+                        <img src="/img/my profile.png.jpg" alt="profile picture" />
                         <div className="glow-effect"></div>
                     </div>
                     <h2 className="hero-role">
