@@ -22,6 +22,7 @@ function about() {
                             <h3>Low-Level Programming</h3>
                             <ul>
                                 <li>C/C++</li>
+                                <li>Assembly</li>
                                 <li>Parallel Programming</li>
                                 <li>Computer Graphics</li>
                             </ul>
@@ -30,27 +31,62 @@ function about() {
                         <div className="skill-category">
                             <h3>Frontend Development</h3>
                             <ul>
+                                <li>React</li>
+                                <li>TypeScript</li>
+                                <li>JavaScript</li>
+                                <li>Vite</li>
+                                <li>Tailwind CSS</li>
                                 <li>HTML5</li>
                                 <li>CSS3</li>
-                                <li>JavaScript</li>
                             </ul>
                         </div>
 
                         <div className="skill-category">
                             <h3>Backend Development</h3>
                             <ul>
+                                <li>FastAPI</li>
+                                <li>Nest.js</li>
                                 <li>Node.js</li>
                                 <li>Python</li>
-                                <li>JavaScript</li>
+                                <li>RESTful API</li>
                             </ul>
                         </div>
 
                         <div className="skill-category">
-                            <h3>Specialized Domains</h3>
+                            <h3>Databases</h3>
                             <ul>
-                                <li>Machine Learning</li>
-                                <li>Unity Game Development</li>
-                                <li>Computer Graphics</li>
+                                <li>PostgreSQL</li>
+                                <li>MySQL</li>
+                                <li>Redis</li>
+                            </ul>
+                        </div>
+
+                        <div className="skill-category">
+                            <h3>Infrastructure & DevOps</h3>
+                            <ul>
+                                <li>Docker</li>
+                                <li>Terraform</li>
+                                <li>GitHub Actions</li>
+                                <li>Vercel</li>
+                                <li>Railway</li>
+                                <li>Firebase</li>
+                            </ul>
+                        </div>
+
+                        <div className="skill-category">
+                            <h3>Embedded Systems & Hardware</h3>
+                            <ul>
+                                <li>Jetson Nano / Raspberry Pi</li>
+                                <li>Camera Modules</li>
+                                <li>GPS L76X Modules</li>
+                            </ul>
+                        </div>
+
+                        <div className="skill-category">
+                            <h3>Machine Learning & AI</h3>
+                            <ul>
+                                <li>YOLO ML</li>
+                                <li>Computer Vision</li>
                             </ul>
                         </div>
                     </div>
