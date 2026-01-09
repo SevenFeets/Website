@@ -8,9 +8,11 @@ function about() {
                 <div className="about-content">
                     <h2>About Me</h2>
                     <p>
-                        Hello! I&apos;m a versatile developer with a strong foundation in both low-level and high-level programming.
-                        My journey in programming started with parallel programming in C, and I&apos;ve since expanded my expertise
-                        across various domains including web development, machine learning, and game development.
+                    I am a Backend Developer with a "mechanical sympathy" for the code I write.
+
+                    Starting my career in parallel programming with C, I learned early on how to squeeze every bit of performance out of a system. This technical curiosity led me to explore Machine Learning, Game Development, and Web Architecture. <br />
+
+                    Having worked across the entire stack and various domains, I bring a unique perspective to backend engineering: I build with the precision of a low-level coder and the agility of a modern web developer.
                     </p>
 
                     <Timeline />

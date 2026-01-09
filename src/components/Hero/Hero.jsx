@@ -2,7 +2,7 @@ import './Hero.css'
 
 function hero() {
     return (
-        <section className="hero-section">
+        <section id="home" className="hero-section">
             <div className="hero-wrapper">
                 <div className="hero-picture">
                     <div className="profile-container">
@@ -21,7 +21,9 @@ function hero() {
                         Welcome to my<br />portfolio Website
                     </h1>
                     <div className="hero-statement">
-                        Hello, my name is Yaroslav, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, delectus id molestiae, veniam maxime quaerat odit tempore corrupti quis tempora praesentium beatae reprehenderit repudiandae, illum facere quam impedit voluptatibus provident?
+                        <span>Hi, I’m Yaroslav. I’m a Backend Developer </span> dedicated to architecting scalable, high-efficiency systems. Beyond writing clean code, I’m driven by a mission to build purposeful technology that solves real-world problems and empowers users.
+
+
                     </div>
                     <div className="cta-buttons">
                         <a href="#projects" className="cta-button primary">View Projects</a>

@@ -10,11 +10,21 @@ function Navbar() {
         setMenuOpen(!menuOpen);
     };
 
+    const scrollToTop = (e) => {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+        // Close mobile menu if open
+        setMenuOpen(false);
+    };
+
     return (
         <nav className="navbar">
             {/* Logo Section */}
             <div className="logo">
-                <a href="#home">Lenerman Yaroslav</a>
+                <a href="#home" onClick={scrollToTop}>Lenerman Yaroslav</a>
             </div>
 
             {/* Social Media Icons */}
@@ -40,7 +50,7 @@ function Navbar() {
             {/* Navigation Links */}
             <ul className={`nav-links ${menuOpen ? 'nav-links-open' : ''}`}>
                 <li>
-                    <a href="#home" className="nav-link">
+                    <a href="#home" className="nav-link" onClick={scrollToTop}>
                         Home
                     </a>
                 </li>
