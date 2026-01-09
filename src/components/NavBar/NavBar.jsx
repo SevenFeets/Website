@@ -20,6 +20,16 @@ function Navbar() {
         setMenuOpen(false);
     };
 
+    const downloadCV = (e) => {
+        e.preventDefault();
+        const link = document.createElement('a');
+        link.href = '/cv/Yaroslav Lenerman cv full stack oriented.pdf';
+        link.download = 'Yaroslav_Lenerman_CV.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return (
         <nav className="navbar">
             {/* Logo Section */}
@@ -36,6 +46,15 @@ function Navbar() {
                     <FontAwesomeIcon icon={faGithub} />
                 </a>
             </div>
+
+            {/* CV Download Button */}
+            <button 
+                className="cv-button" 
+                onClick={downloadCV}
+                aria-label="Download CV"
+            >
+                <span className="cv-button-text">CV</span>
+            </button>
 
             {/* Hamburger Button */}
             <button

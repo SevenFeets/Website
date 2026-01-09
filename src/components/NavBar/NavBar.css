@@ -115,3 +115,95 @@
 .social-icons a:hover {
   color: #f39c12; /* Change color on hover */
 }
+
+/* CV Download Button */
+.cv-button {
+  position: relative;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: #00ff00;
+  padding: 8px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  /* Glow effect */
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3),
+              0 0 30px rgba(0, 255, 0, 0.1);
+  z-index: 11;
+  margin-right: 10px;
+}
+
+.cv-button:hover {
+  background: rgba(0, 255, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.5),
+              0 0 40px rgba(0, 255, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.cv-button-text {
+  position: relative;
+  z-index: 2;
+}
+
+/* Animated clockwise rotating border using conic-gradient */
+.cv-button::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 10px;
+  background: conic-gradient(
+    from 0deg,
+    #00ff00 0%,
+    #00ff00 25%,
+    transparent 25%,
+    transparent 75%,
+    #00ff00 75%,
+    #00ff00 100%
+  );
+  animation: rotate-border-clockwise 3s linear infinite;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.cv-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+@keyframes rotate-border-clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Remove the unused border element */
+.cv-button-border {
+  display: none;
+}
+
+/* Responsive design for CV button */
+@media (max-width: 768px) {
+  .cv-button {
+    padding: 6px 15px;
+    font-size: 0.9rem;
+    margin-right: 5px;
+  }
+}
